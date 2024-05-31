@@ -82,5 +82,15 @@
                 background:rgb(0, 255, 234);
             }
         }
+        &__motto{
+            font-size: 20px;
+        }
+    }
+}
+@media (max-width:350px){
+    .location{
+        h2{
+            font-size: 20px;
+        }
     }
 }

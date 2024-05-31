@@ -14,6 +14,7 @@
     align-items: center;
     color: #fff;
     justify-content: space-between;
+    width: 100%;
     &__logo{
         user-select: none;
         display: flex;
@@ -44,14 +45,13 @@
     }
     &__wrapper{
         display: flex;
-        gap: 24px;
+        gap: 20px;
         align-items: center;
     }
     &__collection{
         display: flex;
         margin-top: 15px;
         gap: 24px;
-
     }
     &__item{
         color: $bg-text;
@@ -65,7 +65,7 @@
        width: 154px;
        height: 40px;
        border-radius: 50px;
-       border: 1px solid rgb(215, 215, 215);
+       border: 1px solid rgb(255, 246, 246);
        background: transparent;
        font-size: 15px;
        color: $bg-text;
@@ -85,7 +85,6 @@
         display: none;
         @media (max-width: 500px) {
             display: block;
-            border: 1px solid rgba(128, 128, 128, 0);
         }
         span{
             display: block;
@@ -98,7 +97,7 @@
     }
 }
 .from-top{
-    transform: translateY(-50px);
+    transform: translateY(-20px);
     opacity: 0;
     animation: fromTop .35s ease-in  .3s forwards;
 }
@@ -125,6 +124,7 @@
 }
 @media (max-width:500px){
     .navbar{
+        width: 100%;
         &__logo{
             h2{
                 display: none;
@@ -132,16 +132,12 @@
         }
         &__btn{
             display: none;
-        }
-        &__wrapper{
-           width: 100%;  
-           margin-left:70px;
-           margin-right: 10px;
         }
     }
 }
 @media (max-width:350px){
     .navbar{
+        max-width: 100%;
         &__logo{
             h2{
                 display: none;
@@ -149,11 +145,6 @@
         }
         &__btn{
             display: none;
-        }
-        &__wrapper{
-           margin-left:10px;
-        //    margin-right: 20px;
-           margin-right:3px;
         }
     }
 }

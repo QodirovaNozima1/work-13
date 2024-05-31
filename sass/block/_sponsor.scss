@@ -57,6 +57,7 @@
 
 @media (max-width:600px) {
     .sponsor{
+        border: none;
         &__wrapper{
             display: flex;
             flex-direction: column;
@@ -94,6 +95,7 @@
 }
 @media (max-width:500px){
     .sponsor{
+        border: none;
         &__wrapper{
             display: flex;
             flex-direction: column;

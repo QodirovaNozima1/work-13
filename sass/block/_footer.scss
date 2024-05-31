@@ -59,6 +59,8 @@
 
 @media (max-width:800px){
     .footer{
+        margin-top: 60px;
+        border: none;
         &__wrapper{
             display: flex;
             flex-direction: column;
@@ -68,7 +70,9 @@
         &__content{
             display: flex;
             flex-direction: column;
-            padding: 10px;
+            flex-wrap: wrap;
+            padding-top: 20px;
+            font-size: 14px;
         }
     }
 }
