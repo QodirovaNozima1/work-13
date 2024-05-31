@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./assets/Fleet symbol.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./bootstrap-5.3.3-dist/css/bootstrap-reboot.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/main.min.css" />
+    <title>fleet</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container-md">
+        <nav class="navbar">
+          <div class="navbar__logo from-top">
+            <img src="./assets/Fleet symbol.png" alt="" />
+            <img src="./assets/fleet.png" alt="" />
+            <h2>|</h2>
+            <select
+              style="animation-delay: 0.4s"
+              class="navbar__select from-top"
+              id="">
+              <option value="travelers" id="travelers">Travelers</option>
+              <option value="Support" id="Support">Support</option>
+              <option value="Language" id="Language">Language</option>
+            </select>
+          </div>
+          <div class="navbar__wrapper">
+            <ul class="navbar__collection">
+              <li style="animation-delay: 0.5s" class="navbar__item from-top">
+                <a href="#"><span>Support</span></a>
+              </li>
+              <li style="animation-delay: 0.6s" class="navbar__item from-top">
+                <a href="#"><span>Language</span></a>
+              </li>
+            </ul>
+            <button style="animation-delay: 0.7s" class="navbar__btn from-top">
+              List your property
+            </button>
+            <img src="./assets/Notification - Bell.png" alt="" />
+            <img src="./assets/avatar.png" alt="" />
+          </div>
+          <div onclick="toggleShow()" class="navbar__menu">
+            <span></span>
+            <span></span>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="container">
+        <div class="hero">
+          <div class="hero__content">
+            <p class="hero__title fromBottom">Car rentals</p>
+            <p style="animation-delay: 0.5s" class="hero__desc fromBottom">
+              Find and book a great experience.
+            </p>
+            <button style="animation-delay: 0.7s" class="hero__btn fromBottom">
+              Start your search
+            </button>
+          </div>
+        </div>
+      </section>
+      <section class="advertising" id="advertising">
+        <div class="container-md">
+          <div class="advertising__box">
+            <ul class="advertising__collection fromBottom">
+              <li style="animation-delay: 0.7s" class="advertising__item">
+                <a href=""><span>Stays</span></a>
+              </li>
+              <li style="animation-delay: 0.6s" class="advertising__item">
+                <a href=""><span>Flights</span></a>
+              </li>
+              <li style="animation-delay: 0.5s" class="advertising__item">
+                <a href=""><span>Cars</span></a>
+              </li>
+              <li style="animation-delay: 0.4s" class="advertising__item">
+                <a href=""><span>Things to do</span></a>
+              </li>
+            </ul>
+            <hr />
+            <div class="advertising__btn">
+              <button class="some">Return to same location</button>
+              <button class="different">
+                Return to same different location
+              </button>
+            </div>
+            <div class="advertising__wrapper">
+              <div class="advertising__card">
+                <img src="./assets/Frame 833.svg" alt="" />
+                <div class="advertising__content">
+                  <p class="advertising__title">Pickup location</p>
+                  <p class="advertising__info">Where are you?</p>
+                </div>
+              </div>
+              <div class="advertising__card tue">
+                <img src="./assets/cal.svg" alt="" />
+                <div class="advertising__content">
+                  <p class="advertising__title">Tue, May 11</p>
+                  <p class="advertising__info">10:00 AM</p>
+                </div>
+              </div>
+              <div class="advertising__card fri">
+                <img src="./assets/cal.svg" alt="" />
+                <div class="advertising__content">
+                  <p class="advertising__title">Fri, May 11</p>
+                  <p class="advertising__info">10:00 AM</p>
+                </div>
+              </div>
+              <div class="advertising__icon">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="feedback">
+        <div class="container-md">
+          <div class="feedback__motto">
+            <div class="feedback__desc">
+              <p class="feedback__title">Popular destinations</p>
+              <p class="feedback__thing">for car rentals</p>
+            </div>
+            <div class="feedback__icon">
+              <img class="left" src="./assets/vector (Stroke).svg" alt="" />
+              <img class="right" src="./assets/right.svg" alt="" />
+            </div>
+          </div>
+          <div class="feedback__box">
+            <div class="feedback__wrapper">
+              <div class="feedback__card">
+                <img src="./assets/img.png" alt="" />
+                <p class="card__title">Paris</p>
+                <p class="card__motto">Car rentals in 86 pickup locations</p>
+              </div>
+              <div class="feedback__card">
+                <img src="./assets/img (2).png" alt="" />
+                <p class="card__title">Ams</p>
+                <p class="card__motto">Car rentals in 86 pickup locations</p>
+              </div>
+              <div class="feedback__card">
+                <img src="./assets/img (6).png" alt="" />
+                <p class="card__title">London</p>
+                <p class="card__motto">Car rentals in 86 pickup locations</p>
+              </div>
+              <div class="feedback__card">
+                <img src="./assets/img (2).png" alt="" />
+                <p class="card__title">Ams</p>
+                <p class="card__motto">Car rentals in 86 pickup locations</p>
+              </div>
+              <div class="feedback__card">
+                <img src="./assets/img.png" alt="" />
+                <p class="card__title">Paris</p>
+                <p class="card__motto">Car rentals in 86 pickup locations</p>
+              </div>
+              <div class="feedback__card">
+                <img src="./assets/img (6).png" alt="" />
+                <p class="card__title">London</p>
+                <p class="card__motto">Car rentals in 86 pickup locations</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="rent" id="rent">
+        <div class="container-md">
+          <div class="rent__wrapper">
+            <div class="rent__desc">
+              <p class="rent__content">supercharge your planning powers</p>
+              <p class="rent__info">Rent a car in minutes with Fleet</p>
+              <p class="rent__content">
+                Stacks is a production-ready library of stackable content blocks
+                built in React Native.
+              </p>
+              <div class="rent__search">
+                <input type="text" placeholder="Enter your phone number" />
+                <button class="rent__btn">
+                  <i class="fa-solid fa-arrow-right"></i>
+                </button>
+              </div>
+            </div>
+            <div class="rent__img">
+              <img src="./assets/phone mockup.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="explore" id="explore">
+        <div class="container-md">
+          <div class="explore__motto">
+            <div class="explore__desc">
+              <p class="explore__title">Explore nearby</p>
+              <p class="explore__thing">for car rentals</p>
+            </div>
+            <div class="explore__icon">
+              <img class="left" src="./assets/vector (Stroke).svg" alt="" />
+              <img class="right" src="./assets/right.svg" alt="" />
+            </div>
+          </div>
+          <div class="explore__box">
+            <div class="explore__wrapper">
+              <div class="explore__card">
+                <img src="./assets/img.png" alt="" />
+                <p class="explore__card__title">Paris</p>
+                <p class="explore__card__motto">
+                  Car rentals in 86 pickup locations
+                </p>
+              </div>
+              <div class="explore__card">
+                <img src="./assets/img (2).png" alt="" />
+                <p class="explore__card__title">Paris</p>
+                <p class="explore__card__motto">
+                  Car rentals in 86 pickup locations
+                </p>
+              </div>
+              <div class="explore__card">
+                <img src="./assets/img (6).png" alt="" />
+                <p class="explore__card__title">Paris</p>
+                <p class="explore__card__motto">
+                  Car rentals in 86 pickup locations
+                </p>
+              </div>
+              <div class="explore__card">
+                <img src="./assets/img.png" alt="" />
+                <p class="explore__card__title">Paris</p>
+                <p class="explore__card__motto">
+                  Car rentals in 86 pickup locations
+                </p>
+              </div>
+              <div class="explore__card">
+                <img src="./assets/img (2).png" alt="" />
+                <p class="explore__card__title">Paris</p>
+                <p class="explore__card__motto">
+                  Car rentals in 86 pickup locations
+                </p>
+              </div>
+              <div class="explore__card">
+                <img src="./assets/img (1).png" alt="" />
+                <p class="explore__card__title">Paris</p>
+                <p class="explore__card__motto">
+                  Car rentals in 86 pickup locations
+                </p>
+              </div>
+              <div class="explore__card">
+                <img src="./assets/img (6).png" alt="" />
+                <p class="explore__card__title">Paris</p>
+                <p class="explore__card__motto">
+                  Car rentals in 86 pickup locations
+                </p>
+              </div>
+              <div class="explore__card">
+                <img src="./assets/img.png" alt="" />
+                <p class="explore__card__title">Paris</p>
+                <p class="explore__card__motto">
+                  Car rentals in 86 pickup locations
+                </p>
+              </div>
+              <div class="explore__card">
+                <img src="./assets/img (1).png" alt="" />
+                <p class="explore__card__title">Paris</p>
+                <p class="explore__card__motto">
+                  Car rentals in 86 pickup locations
+                </p>
+              </div>
+            </div>
+            <button class="explore__btn">Show more ></button>
+          </div>
+        </div>
+      </section>
+      <section class="services" id="services">
+        <div class="container-md">
+          <p class="services__title">A creative agency that lead and inspire</p>
+          <h2>Amazing Services</h2>
+          <button type="button" class="services__btn btn btn-primary">
+            Contact us
+          </button>
+          <div class="services__wrapper">
+            <div class="services__card">
+              <img src="./assets/Subtract.png" alt="" />
+              <p class="services__card__title">1+M reviewers</p>
+              <p class="services__card__desc">
+                We realize ideas from simple to complex, everything becomes easy
+                to use and reach the most potential customers.
+              </p>
+            </div>
+            <div class="services__card">
+              <img src="./assets/Filled.png" alt="" />
+              <p class="services__card__title">24/7 customer service</p>
+              <p class="services__card__desc">
+                We realize ideas from simple to complex, everything becomes easy
+                to use and reach the most potential customers.
+              </p>
+            </div>
+            <div class="services__card">
+              <img src="./assets/kast.png" alt="" />
+              <p class="services__card__title">Free cancellation</p>
+              <p class="services__card__desc">
+                We realize ideas from simple to complex, everything becomes easy
+                to use and reach the most potential customers.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="sponsor" id="sponsor">
+        <div class="container-md">
+          <div class="sponsor__wrapper">
+            <div class="sponsor__card__first horizontal">
+              <img src="./assets/logo 01.png" alt="" />
+            </div>
+            <div class="sponsor__card__first horizontal">
+              <img src="./assets/logo 02.png" alt="" />
+            </div>
+            <div class="sponsor__card__second horizontal">
+              <img src="./assets/logo 06.png" alt="" />
+            </div>
+            <div class="sponsor__card__first horizontal1">
+              <img src="./assets/logo 04.png" alt="" />
+            </div>
+            <div class="sponsor__card__first horizontal1">
+              <img src="./assets/logo 05.png" alt="" />
+            </div>
+            <div class="sponsor__card__second">
+              <img src="./assets/logo 01.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="according" id="according">
+        <div class="container-md">
+          <h2>Frequently asked questions</h2>
+          <div class="according__btn">
+            <button>General</button>
+            <button>Support</button>
+            <button>Hosting</button>
+            <button>Product</button>
+          </div>
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseOne"
+                  aria-expanded="true"
+                  aria-controls="collapseOne"
+                >
+                  How can i set up a new website?
+                </button>
+              </h2>
+              <div
+                id="collapseOne"
+                class="accordion-collapse collapse show"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  <strong>This is the first item's accordion body.</strong> It
+                  is shown by default, until the collapse plugin adds the
+                  appropriate classes that we use to style each element. These
+                  classes control the overall appearance, as well as the showing
+                  and hiding via CSS transitions. You can modify any of this
+                  with custom CSS or overriding our default variables. It's also
+                  worth noting that just about any HTML can go within the
+                  <code>.accordion-body</code>, though the transition does limit
+                  overflow.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="collapseTwo"
+                >
+                  How does it work?
+                </button>
+              </h2>
+              <div
+                id="collapseTwo"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  <strong>This is the second item's accordion body.</strong> It
+                  is hidden by default, until the collapse plugin adds the
+                  appropriate classes that we use to style each element. These
+                  classes control the overall appearance, as well as the showing
+                  and hiding via CSS transitions. You can modify any of this
+                  with custom CSS or overriding our default variables. It's also
+                  worth noting that just about any HTML can go within the
+                  <code>.accordion-body</code>, though the transition does limit
+                  overflow.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree"
+                  aria-expanded="false"
+                  aria-controls="collapseThree"
+                >
+                  How does it work?
+                </button>
+              </h2>
+              <div
+                id="collapseThree"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  <strong>This is the third item's accordion body.</strong> It
+                  is hidden by default, until the collapse plugin adds the
+                  appropriate classes that we use to style each element. These
+                  classes control the overall appearance, as well as the showing
+                  and hiding via CSS transitions. You can modify any of this
+                  with custom CSS or overriding our default variables. It's also
+                  worth noting that just about any HTML can go within the
+                  <code>.accordion-body</code>, though the transition does limit
+                  overflow.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="location">
+        <div class="container-md">
+          <h2>Recommended pickup locations</h2>
+            <p class="location__motto">A lot of amazing experiences 🏝</p>
+          <div class="location__box">
+            <div class="location__wrapper">
+              <div class="location__card">
+                <button class="location__btn">128</button>
+                <div class="location__content">
+                  <img src="./assets/Line.svg" alt="">
+                  <p class="location__info">South Virgilland</p>
+                  <p class="location__data">From Rs. 1,461 per day</p>
+                </div>
+              </div>
+              <div class="location__card">
+                <button class="location__btn">457</button>
+                <div class="location__content">
+                  <img src="./assets/Line.svg" alt="">
+                  <p class="location__info">Purdyhaven</p>
+                  <p class="location__data">From Rs. 1,461 per day</p>
+                </div>
+              </div>
+              <div class="location__card">
+                <button class="location__btn">733</button>
+                <div class="location__content">
+                  <img src="./assets/Line.svg" alt="">
+                  <p class="location__info">Port Jarrett</p>
+                  <p class="location__data">From Rs. 1,461 per day</p>
+                </div>
+              </div>
+              <div class="location__card">
+                <button class="location__btn">976</button>
+                <div class="location__content">
+                  <img src="./assets/Line.svg" alt="">
+                  <p class="location__info">New Kristian</p>
+                  <p class="location__data">From Rs. 1,461 per day</p>
+                </div>
+              </div>
+              <div class="location__card">
+                <button class="location__btn">453</button>
+                <div class="location__content">
+                  <img src="./assets/Line.svg" alt="">
+                  <p class="location__info">Purdyhaven</p>
+                  <p class="location__data">From Rs. 1,461 per day</p>
+                </div>
+              </div>
+              <div class="location__card">
+                <button class="location__btn">356</button>
+                <div class="location__content">
+                  <img src="./assets/Line.svg" alt="">
+                  <p class="location__info">Port Jarrett</p>
+                  <p class="location__data">From Rs. 1,461 per day</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer" id="footer">
+      <div class="container-md">
+          <div class="footer__wrapper">
+              <div class="footer__content">
+                  <img src="./assets/logo.svg" alt="">
+              </div>
+            <div class="text">
+              <div class="footer__content">
+                  <p class="content__text">About</p>
+                  <p class="content__text">Projects</p>
+              </div>
+                  <div class="footer__content">
+                      <p class="content__text">What We Do</p>
+                      <p class="content__text">Press</p>
+                  </div>
+                  <div class="footer__content">
+                      <p class="content__text">Jobs</p>
+                      <p class="content__text">Download</p>
+                  </div>
+              </div>
+              <div class="inp">
+                  <input type="text" placeholder="Enter your email">
+                  <button>></button>
+              </div>
+          </div>
+      </div>
+  </footer>
+
+    <script src="./js/app.js"></script>
+    <script src="./bootstrap-5.3.3-dist/js/bootstrap.js"></script>
+  </body>
+</html>

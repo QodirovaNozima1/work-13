@@ -1,0 +1,46 @@
+.according{
+    margin: 100px 0;
+    text-align: center;
+    align-items: center;
+    h2{
+         font-size: 48;
+         font-weight: 700;
+         color: $bg-content;
+    }
+    &__btn{
+        display: flex;
+        flex-direction: row;
+        margin: 40px 0;
+        width: 349px;
+        height: 28px;
+        gap: 30px;
+        margin-left: 50%;
+        transform: translateX(-50%);
+    }
+    &__btn button{
+        background: none;
+        width: 78px;
+        height: 28px;
+        font-size: 14px;
+        font-weight: 600;
+        border: none;
+        border-radius: 20px;
+        transition: .25s;
+    }
+    &__btn button:hover{
+        width: 80px;
+        height: 30px;
+        background: black;
+        color: white;
+        font-weight: 500;
+    }
+}
+
+
+@media (max-width:600px) {
+    .according{
+        &__btn{
+           display: none;
+        }
+    }
+}

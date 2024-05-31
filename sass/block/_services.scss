@@ -1,0 +1,113 @@
+.services{
+    text-align: center;                                       
+    margin-top: 20px;
+    h2{
+        font-size: 48px;
+        font-weight: 700;
+        color: $bg-content;
+    }
+    &__title{
+           font-size: 14px;
+           font-weight: 400px;
+           color: $bg-text;
+    }
+    &__btn {
+        border-radius: 50px;
+        width: 135px;
+        height: 48px;
+        margin-top: 20px;
+        border: none;
+        background: rgba(124, 124, 252, 0.877);
+        transition: .3s;
+    } 
+    &__btn:hover{
+        box-shadow: 0 0 10px rgb(30, 236, 255);
+        border: none;  
+        transform: scale(1.2);
+        background: rgb(13, 239, 119);
+    }
+    &__btn:active{
+        box-shadow: none;
+    }
+    &__wrapper{
+        margin-top: 100px;
+        display: flex;
+        flex-direction: row;
+        gap: 45px;
+        overflow: auto;
+    }
+    &__card{
+        width: 357px;
+        padding: 40px 25px ;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        gap: 20px;
+        border-radius: 20px;
+        background: rgba(244, 245, 246, 1);
+        transition: 0.35s;
+        overflow: hidden;
+        &:hover{
+            cursor:grab;
+            transform:scale(0.9);
+            box-shadow: 10px 10px 5px 3px  rgb(121, 208, 252);
+        }
+    }
+    &__card img {
+    width: 48px;
+    height: 48px;
+    transition: 0.3ss;
+}
+&__card img:hover{
+    transform: scale(0.9);
+    box-shadow: 20px rgba(220, 220, 220, 0.762);
+}
+.services__card__title{
+       font-size: 18px;
+       font-weight: 700;
+       color: $bg-content;
+}
+.services__card__desc{
+      font-size: 14px;
+      font-weight: 400;
+      color: $bg-text;
+}
+    
+}
+
+    @media (max-width:990px) {
+        .services{
+            &__wrapper{
+                display: flex;
+                flex-direction: row;
+                overflow: auto;
+            }
+            &__card{
+                overflow-y: auto;
+                .text__md{
+                    font-size: 10px;
+                }
+                .text__lg{
+                    font-size: 12px;
+                }
+            }
+              
+        }
+    }
+    @media (max-width:560px) {
+        .services{
+            &__wrapper{
+                display: flex;
+                flex-direction: column;
+            }
+            &__card{
+                width: 100%;
+                .text__md{
+                    font-size: 16px;
+                }
+                .text__lg{
+                    font-size: 14px;
+                }
+            }
+        }
+    }
